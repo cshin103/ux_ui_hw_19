@@ -1,0 +1,298 @@
+body{
+    background-color:#333333;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    width: 75px;
+    height: 75px;
+}
+.nav{
+    display: inline-block;
+    padding: 20px;
+}
+#column{
+    display: inline-block;
+    padding: 30px;
+    background-size: 600px;
+}
+.right ul{
+    display: flex;
+    height: 50px;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+.right a{
+    display: inline-block;
+    justify-content: flex-end;
+    width: 25%;
+   color:#D7D7D7;
+   padding: 20px;
+   font-size: 14px;
+   text-decoration: none;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Optima Bold'), url('OPTIMA_B.woff') format('woff');
+    }
+.column {
+    display: grid;
+    margin: 0 auto;
+    grid-template-areas:
+    'about about'
+    'left right';
+    grid-template-rows: 25% 25% 25% 5%;
+    grid-template-columns: 65% 35%;
+}
+.about {
+    grid-area: about;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+}
+.left{
+    grid-area: left;
+}
+.right{
+    grid-area: right;
+}
+.education,.work_experience{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.text1{
+    display: inline-block;
+    background-position: center;
+}
+.education{
+    margin-top: 10px;
+    justify-content:flex-start;
+    padding: 30px;
+}
+.work_experience{
+    margin-top: 10px;
+    justify-content: flex-start;
+    padding: 30px;
+}
+.text h1{
+    color: #D7D7D7;
+    font-family: Helvetica;
+    font-size: x-large;
+    margin-top: 10px;
+}
+.text p{
+    color: #D7D7D7;
+    font-family: 'optima';
+    font-style: normal;
+    font-weight: normal;
+    font-size:20px
+}
+.text1 p{
+    color: #D7D7D7;
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Optima Bold'), url('OPTIMA_B.woff') format('woff');
+}
+.text1 h3{
+    columns: #D7D7D7;
+    font-family: Helvetica;
+    margin-top: 10px;
+}
+.button{
+    font-family: 'Optima';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Optima Bold'), url('OPTIMA_B.woff') format('woff');
+}
+.text1 h1{
+    color:#D7D7D7;
+    font-family: helvetica;
+}
+.text1 h4{
+    margin-top: 10px;
+    color:#D7D7D7;
+    display: flex;
+    justify-content: center;
+        font-family: 'Optima';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Optima Bold'), url('OPTIMA_B.woff') format('woff');
+        margin-top:20px;
+}
+.imageholder{
+    position: relative;
+    float: left;
+}
+.caption{
+    position: absolute;
+    top: 0;
+    left: 2;
+    right: 0;
+    font-family: Helvetica;
+    font-size: 84px;
+    color:#D7D7D7;
+    padding: 1em 2.5em;
+    transform: rotate(270deg);
+}
+.caption2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 2;
+    font-family: Helvetica;
+    font-size: 84px;
+    color:#D7D7D7;
+    padding: 5em 3em;
+    transform: rotate(270deg);
+}
+button{
+    color:#D7D7D7;
+    background-color: #333333;
+    font-family: 'optima';
+    font-style: normal;
+    font-size: 12px;
+    text-decoration: underline;
+    border: none;
+}
+h4{
+    display: flex;
+    flex-direction: row;
+    color: #D7D7D7;
+    font-family:'optima';
+    font-style: normal;
+    font-size: 13px;
+    grid-area: 'bleft';
+    justify-content: flex-start;
+}
+#render{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+#render img{
+    display: grid;    
+    grid-column: 1/2;
+    grid-row: 1;
+    width: 300px;
+    height: 150px;
+    margin: 10px 20px 20px 0px;
+}
+#render p{
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    font-family: 'optima';
+    font-style: normal;
+    font-size: 13px;
+}
+#render a{
+    display: grid;
+    grid-column: 4;
+    grid-row: 3;
+    text-decoration-line: underline;
+    font-family: 'optima';
+    color: #D7D7D7;
+    justify-content: end;
+    padding: 5px;
+
+}
+#skillssection{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-right: 5px;
+    
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.skills dl{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.skills dt{
+    display: flex;
+    color: #fd151b;
+    font-family: 'helvetica';
+    padding-bottom: 2px;
+    font-style: bold;
+    font-size: 20px;
+}
+.skills dd{
+    display: flex;
+    padding: 3px;
+    margin-left: 0px;
+    list-style: none;
+   font-size: 15px;
+   text-decoration: none;
+    color: #D7D7D7;
+     font-family: 'Optima';
+     font-style: normal;
+     font-weight: normal;
+     src: local('Optima Bold'), url('OPTIMA_B.woff') format('woff');  
+}
+#footer{
+    display: flex;
+    background-color: white;
+}
+.index h6{
+    color: #D7D7D7;
+    font-family: 'optima';
+    font-style: 'normal';
+    font-weight: bold;
+    font-size: 13px;
+}
+.index ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.index a{
+    display:flex;
+    color:#D7D7D7;
+    padding: 25px;
+    font-size: 40px;
+    text-decoration: none;
+     font-family: 'Helvetica';
+     font-style: bold;
+     font-weight: normal;
+ }
+#footer{
+    display: flex;
+    height: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}   
+#footer ul{
+    display: flex;
+    list-style: none;
+    justify-items: left;
+    align-content: center;
+}
+#footer a{
+    display: inline-block;
+    color:#D7D7D7;
+    padding: 25px;
+    font-size: 14px;
+    text-decoration: none;
+     font-family: 'optima';
+     font-style: bold;
+     font-weight: normal;
+ }
+p{
+    display: inline-block;
+    justify-content: right;
+}
+
