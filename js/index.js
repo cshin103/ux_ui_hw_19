@@ -1,4 +1,9 @@
 console. log("your index.js file is loaded correctly!");
+function fade() {
+    $('.preloader').fadeOut("slow");
+    }
+    setTimeout(fade, 3000);
+
 function myFunction(){
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -6,12 +11,12 @@ function myFunction(){
   document.getElementById("myBar").style.width = scrolled + "%";
 };
 var i = 0;
-var txt = "Hi! Nice to Meet You!";
+var txt = "I'm Carnea,";
 var speed = 150;
 
 function typeWriter() {
   if (i < txt.length) {
-  document.getElementById("hellohero").innerHTML += txt.charAt(i);
+  document.getElementById("carnea").innerHTML += txt.charAt(i);
   i++;
   setTimeout(typeWriter, speed);
   }
@@ -19,7 +24,3 @@ function typeWriter() {
 
 typeWriter();
 
-function fade() {
-    $('.preloader').fadeOut("slow");
-    }
-    setTimeout(fade, 3000);
