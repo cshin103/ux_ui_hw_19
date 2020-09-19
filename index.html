@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/homepage.css">
-    <script src="js/index.js"></script>
 </head>
 <body>
+    <div class="header">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div>
     <section id="header">
         <div class="logo"><img src="images/d_logo.png" alt="carnea logo"></div>
         <div class="nav">
@@ -19,45 +23,47 @@
         </div>
     </section>
         <section class="hero">
-             <p>HI! NICE TO MEET YOU!</p>
+             <p id="hellohero"></p>
              <h1>I'm Carnea, <br>
                  an Interior designer developing as a
-                 UX designer with a focus on interaction design, visual design and information architecture.  
+                 UX designer with a focus on interaction design, visual design and information architecture.
                 <br>I design to make a small change in the world and to speak for those without a voice.</h1>
         </section>
         <br><br><br><br><br>
 <!--My Work Section Constructed by using CSS Grid-->        
     <section id=bgc>
-        <hr><h4>01  Black Girls CODE</h4>
+        <hr><h4>하나 01  </h4>
         <div class=bgc>
             <div class=bgctext><h2>Black Girls CODE:
                 Redesigning a nonprofit</h2>
             <p>BRAND IDENTITY, WEB DESIGN, ANIMATION</p>
+            <button>READ CASE STUDY</button>
             </div>
             <img src="images/bgc.png">
-            <button>READ CASE STUDY</button>
+            
         </div>
     </section>
     <section id=nasa>
-        <hr><h4>02  NASA</h4> 
+        <hr><h4>둘  02</h4> 
         <div class=nasa>
             <div class=nasatext><h2>NASA:
                 Responsive Web Design</h2>
                 <p>BRAND IDENTITY, WEB DESIGN</p>
+                <button>READ CASE STUDY</button>
             </div>
             <img src="images/nasa_mockup.png">
-            <button>READ CASE STUDY</button>
         </div>
     </section>
     <section id=uniconnect>
-        <hr><h4>셋 03  UniConnect</h4> 
+        <hr><h4>셋 03</h4> 
         <div class=uniconnect>
             <div class=unitext><h2>UniConnect:
                 To Solve an Everyday Problem</h2>
                 <p>BRAND IDENTITY, APPLICATION CREATION, DESIGN SYSTEMS, TECHNOLOGY</p>
+                <button>READ CASE STUDY</button>
             </div>
             <img src="images/uni_mockup.png">
-            <button>READ CASE STUDY</button>
+            
         </div>
     </section>
     <br><br><br>
@@ -65,9 +71,9 @@
         <hr> <h4>인덱스   INDEX</h4>
         <div class=index>
         <ul>
-            <li><a href="#"><sup><small>01</small></sup><b>Black Girls CODE</b></a></li>
-            <li><a href="#"><sup><small>02</small></sup><b>NASA</b></a></li>
-            <li><a href="#"><sup><small>03</small></sup><b>UniConnect</b></a></li>
+            <li class=bgc><a href="#bgc"><sup><small>01</small></sup><b>Black Girls CODE</b></a></li>
+            <li><a href="#nasa"><sup><small>02</small></sup><b>NASA</b></a></li>
+            <li><a href="#uniconnect"><sup><small>03</small></sup><b>UniConnect</b></a></li>
         </ul>
         </div>  
     </section> 
@@ -81,7 +87,14 @@
         <p>© Carnea Shin 2020</p> 
         </div>    
     </footer>
-    
+    <div class="preloader">
+        <img src="images/d_logo.png">
+      </div>
     
 </body>
+<script
+src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
 </html>
