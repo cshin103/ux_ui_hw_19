@@ -10,17 +10,19 @@ function myFunction(){
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 };
+
 var i = 0;
-var txt = "I'm Carnea,";
-var speed = 150;
+  var txt = "I'm Carnea";
+  var speed = 150;
 
-function typeWriter() {
-  if (i < txt.length) {
-  document.getElementById("carnea").innerHTML += txt.charAt(i);
-  i++;
-  setTimeout(typeWriter, speed);
+  function typeWriter() {
+    if (i < txt.length) {
+    document.getElementById("carnea").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+    }
   }
-}
-
+  
 typeWriter();
+
 
